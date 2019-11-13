@@ -41,7 +41,7 @@ func InitZone() {
 	time.Local = local
 }
 
-var cfg *goconfig.ConfigFile
+var Cfg *goconfig.ConfigFile
 
 // 初始化配置文件
 func InitConfiger() {
@@ -49,15 +49,15 @@ func InitConfiger() {
 	if err != nil {
 		panic("init config file error:"+ err.Error())
 	}
-	cfg = config
+	Cfg = config
 }
 
 // 数据库配置
 func MySqlConfig() mysqlConfig {
 	model := "production"
-	mysql, err := cfg.GetSection("mysql")
+	mysql, err := Cfg.GetSection("mysql")
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
 	if data := mysql[model]; data != "" {
 		return mysqlConfig{
@@ -69,9 +69,9 @@ func MySqlConfig() mysqlConfig {
 
 // redis配置
 func RedisConfig() redisConfig {
-	redis, err := cfg.GetSection("redis")
+	redis, err := Cfg.GetSection("redis")
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
 	var (
 		password string

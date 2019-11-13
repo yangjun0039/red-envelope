@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cace1891-a8cc-44af-87c3-a5671494b876" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/configer/configer.go" afterPath="$PROJECT_DIR$/configer/configer.go" />
+      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
+      <change beforePath="$PROJECT_DIR$/network/middleware.go" afterPath="$PROJECT_DIR$/network/middleware.go" />
+      <change beforePath="$PROJECT_DIR$/network/router.go" afterPath="$PROJECT_DIR$/network/router.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +21,7 @@
       <file leaf-file-name="routes.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/kexin-wallet/routes.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="300">
               <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="e#22#120#0" expanded="true" />
@@ -52,8 +57,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+            <state relative-caret-position="373">
+              <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
               <folding>
                 <element signature="n#!!block;n#serverInfoHandler#0" expanded="false" />
               </folding>
@@ -61,27 +66,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="router.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="router.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/network/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+            <state relative-caret-position="358">
+              <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+              <folding>
+                <element signature="e#17#129#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="configer.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configer/configer.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="69" column="10" lean-forward="true" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+              <folding>
+                <element signature="e#18#97#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configer/app.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="middleware.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/network/middleware.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2430">
-              <caret line="272" column="0" lean-forward="false" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
               <folding>
-                <element signature="e#17#194#0" expanded="true" />
+                <element signature="n#!!block;n#VerifySignatureHandler#0" expanded="false" />
                 <element signature="n#!!block;n#RequesterHandler#0" expanded="false" />
                 <element signature="n#!!block;n#SwitchRouteHandler#0" expanded="false" />
                 <element signature="n#!!block;n#ForbidRequestTooOftenHandler#0" expanded="false" />
+                <element signature="n#!!block;n#LoginTokenHandler#0" expanded="false" />
                 <element signature="n#!!block;n#JWTHandler#0" expanded="false" />
+                <element signature="n#!!block;n#VerfyPermissionsHandler#0" expanded="false" />
+                <element signature="n#!!block;n#checkPermission#0" expanded="false" />
                 <element signature="n#!!block;n#inMethodArr#0" expanded="false" />
               </folding>
             </state>
@@ -101,7 +133,7 @@
       <file leaf-file-name="sendEnvelop.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/kexin-wallet/red-packet/sendEnvelop.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
+            <state relative-caret-position="417">
               <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
               <folding>
                 <element signature="e#20#214#0" expanded="true" />
@@ -158,8 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/foundation/logger_test.go" />
-        <option value="$PROJECT_DIR$/foundation/digest.go" />
         <option value="$PROJECT_DIR$/application/system/model/permission.go" />
         <option value="$PROJECT_DIR$/application/system/model/user.go" />
         <option value="$PROJECT_DIR$/application/system/model/data.go" />
@@ -177,11 +207,9 @@
         <option value="$PROJECT_DIR$/application/system/model/model.go" />
         <option value="$PROJECT_DIR$/application/testRouter/electric/routes.go" />
         <option value="$PROJECT_DIR$/application/login/loginHandler.go" />
-        <option value="$PROJECT_DIR$/configer/app.conf" />
         <option value="$PROJECT_DIR$/configer/conf_test.go" />
         <option value="$PROJECT_DIR$/configer/initConfig.go" />
         <option value="$PROJECT_DIR$/network/manager.go" />
-        <option value="$PROJECT_DIR$/configer/configer.go" />
         <option value="$PROJECT_DIR$/application/wallet/model.go" />
         <option value="$PROJECT_DIR$/application/wallet/failure.go" />
         <option value="$PROJECT_DIR$/application/wallet/red-packet/redPacket.go" />
@@ -190,7 +218,6 @@
         <option value="$PROJECT_DIR$/application/wallet/routes.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/red-packet/bankCard.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/red-packet/wallet.go" />
-        <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/model/redPacketModel.go" />
         <option value="$PROJECT_DIR$/application/system/model/model_test.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/failure.go" />
@@ -202,13 +229,18 @@
         <option value="$PROJECT_DIR$/databases/mysql/mysql.go" />
         <option value="$PROJECT_DIR$/network/adapter.go" />
         <option value="$PROJECT_DIR$/databases/redis/redis_test.go" />
-        <option value="$PROJECT_DIR$/network/middleware.go" />
         <option value="$PROJECT_DIR$/logs/red-envelope_20191112.logs" />
         <option value="$PROJECT_DIR$/network/response.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/red-packet/failure.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/red-packet/red-envelop-v2.0.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/routes.go" />
         <option value="$PROJECT_DIR$/application/kexin-wallet/model/redEnvelopModel.go" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/configer/configer.go" />
+        <option value="$PROJECT_DIR$/configer/app.conf" />
+        <option value="$PROJECT_DIR$/network/router.go" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/network/middleware.go" />
       </list>
     </option>
   </component>
@@ -251,23 +283,12 @@
             <path>
               <item name="red-envelope" type="b2602c69:ProjectViewProjectNode" />
               <item name="red-envelope" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="red-envelope" type="b2602c69:ProjectViewProjectNode" />
-              <item name="red-envelope" type="462c0819:PsiDirectoryNode" />
               <item name="configer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="red-envelope" type="b2602c69:ProjectViewProjectNode" />
               <item name="red-envelope" type="462c0819:PsiDirectoryNode" />
-              <item name="databases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="red-envelope" type="b2602c69:ProjectViewProjectNode" />
-              <item name="red-envelope" type="462c0819:PsiDirectoryNode" />
-              <item name="databases" type="462c0819:PsiDirectoryNode" />
-              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="crtkey" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,6 +441,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29262394" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -431,7 +453,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -462,18 +483,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../github.com/Unknwon/goconfig/conf.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="428" column="0" lean-forward="false" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configer/singleton.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
@@ -499,13 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
           <caret line="91" column="50" lean-forward="true" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configer/configer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -737,49 +744,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/databases/mysql/mysql.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="128" column="14" lean-forward="false" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/network/response.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="93" column="12" lean-forward="false" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/network/middleware.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="272" column="0" lean-forward="false" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
-          <folding>
-            <element signature="e#17#194#0" expanded="true" />
-            <element signature="n#!!block;n#RequesterHandler#0" expanded="false" />
-            <element signature="n#!!block;n#SwitchRouteHandler#0" expanded="false" />
-            <element signature="n#!!block;n#ForbidRequestTooOftenHandler#0" expanded="false" />
-            <element signature="n#!!block;n#JWTHandler#0" expanded="false" />
-            <element signature="n#!!block;n#inMethodArr#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/kexin-wallet/red-packet/sendEnvelop.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
-          <folding>
-            <element signature="e#20#214#0" expanded="true" />
-            <element signature="n#!!block;n#demical#0" expanded="false" />
-            <element signature="n#!!block;n#randSeed#0" expanded="false" />
-            <element signature="n#!!block;n#getTodaySecond#0" expanded="false" />
-            <element signature="n#!!block;n#singleChangeCheck#0" expanded="false" />
-            <element signature="n#!!block;n#groupChangeCheck#0" expanded="false" />
-            <element signature="n#!!block;n#changePayCheck#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,7 +763,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/kexin-wallet/routes.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="300">
           <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="e#22#120#0" expanded="true" />
@@ -811,16 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="53" column="9" lean-forward="false" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!block;n#serverInfoHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/kexin-wallet/red-packet/failure.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -828,6 +786,38 @@
           <folding>
             <element signature="e#20#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databases/mysql/mysql.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/kexin-wallet/red-packet/sendEnvelop.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="121" column="1" lean-forward="false" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+          <folding>
+            <element signature="e#20#214#0" expanded="true" />
+            <element signature="n#!!block;n#demical#0" expanded="false" />
+            <element signature="n#!!block;n#randSeed#0" expanded="false" />
+            <element signature="n#!!block;n#getTodaySecond#0" expanded="false" />
+            <element signature="n#!!block;n#singleChangeCheck#0" expanded="false" />
+            <element signature="n#!!block;n#groupChangeCheck#0" expanded="false" />
+            <element signature="n#!!block;n#changePayCheck#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -841,17 +831,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/configer/app.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="180">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configer/configer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="69" column="10" lean-forward="true" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+          <folding>
+            <element signature="e#18#97#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/network/router.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="358">
+          <caret line="88" column="32" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+          <folding>
+            <element signature="e#17#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!block;n#serverInfoHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/network/middleware.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!block;n#VerifySignatureHandler#0" expanded="false" />
+            <element signature="n#!!block;n#RequesterHandler#0" expanded="false" />
+            <element signature="n#!!block;n#SwitchRouteHandler#0" expanded="false" />
+            <element signature="n#!!block;n#ForbidRequestTooOftenHandler#0" expanded="false" />
+            <element signature="n#!!block;n#LoginTokenHandler#0" expanded="false" />
+            <element signature="n#!!block;n#JWTHandler#0" expanded="false" />
+            <element signature="n#!!block;n#VerfyPermissionsHandler#0" expanded="false" />
+            <element signature="n#!!block;n#checkPermission#0" expanded="false" />
+            <element signature="n#!!block;n#inMethodArr#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

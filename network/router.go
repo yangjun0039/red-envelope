@@ -7,6 +7,7 @@ import (
 	"encoding/json"
 	"time"
 	"log"
+	"red-envelope/configer"
 )
 
 type NetProtocol int
@@ -76,6 +77,14 @@ func (r *Router) Startup(protocol NetProtocol, port uint64) {
 	rootRouter = r
 	server := http.Server{Addr: fmt.Sprintf(":%v", port), Handler: r.timeoutHandler()}
 	if protocol == HTTPS {
+		key, err := configer.Cfg.GetSection("key")
+		if err != nil {
+			panic(err)
+		}
+		certFile := key["certificate_file"]
+		keyFile := key["private_key_file"]
+		fmt.Println("Startup")
+		log.Fatal("http server fatal: ", server.ListenAndServeTLS(certFile, keyFile))
 
 	} else if protocol == HTTP {
 		// 添加日志

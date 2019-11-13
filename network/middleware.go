@@ -18,7 +18,6 @@ type Handler func(requester *Requester, w http.ResponseWriter, r *http.Request)
 // CrossOriginHandler is the middleware for allowing cross origin request.
 // The white origins are set by the white_origins list in config file.
 func CrossOriginHanddler(handler Handler) Handler {
-	fmt.Println("CrossOriginHanddler")
 	return func(requester *Requester, w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		origin := r.Header.Get("Origin")
@@ -34,7 +33,6 @@ func CrossOriginHanddler(handler Handler) Handler {
 }
 
 func RecoveryHandler(handler Handler) Handler {
-	fmt.Println("RecoveryHandler")
 	return func(requester *Requester, w http.ResponseWriter, r *http.Request) {
 		defer func() {
 			if err := recover(); err != nil {
@@ -78,7 +76,6 @@ func VerifySignatureHandler(handler Handler) Handler {
 }
 
 func RequesterHandler(handler Handler) http.Handler {
-	fmt.Println("RequesterHandler")
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		u, _ := uuid.NewV4()
 		uuid := u.String()
@@ -101,7 +98,6 @@ func RequesterHandler(handler Handler) http.Handler {
 
 // 用于重定向
 func SwitchRouteHandler(handler http.Handler) http.Handler {
-	fmt.Println("SwitchRouteHandler")
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		method := r.Header.Get("x-Method")
 		if method != "" && (r.Method == http.MethodGet || r.Method == http.MethodPost) {
@@ -177,7 +173,6 @@ func ForbidRequestTooOftenHandler(handler Handler) Handler {
 }
 
 func LoginTokenHandler(handler Handler) Handler {
-	fmt.Println("LoginTokenHandler")
 	return func(requester *Requester, w http.ResponseWriter, r *http.Request) {
 		t := requester.Token
 		accToken, ok := t.(*AccessToken)

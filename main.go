@@ -51,7 +51,7 @@ func main(){
 	login.MountSubrouterOn(r)
 	kexin_wallet.MountSubrouterOn(r)
 
-	r.Startup(network.HTTP, 8888)
+	r.Startup(network.HTTPS, 8080)
 }
 
 

@@ -3,3 +3,5 @@
 *.yml
 *.conf
 *.xml
+.idea/workspace.xml
+
