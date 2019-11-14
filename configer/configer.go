@@ -8,6 +8,8 @@ import (
 	"github.com/Unknwon/goconfig"
 )
 
+var ServerMap map[string]string
+
 type mysqlConfig struct {
 	DataSourceName string
 }
@@ -50,6 +52,7 @@ func InitConfiger() {
 		panic("init config file error:"+ err.Error())
 	}
 	Cfg = config
+	ServerMap = ServerConf()
 }
 
 // 数据库配置
@@ -57,7 +60,7 @@ func MySqlConfig() mysqlConfig {
 	model := "production"
 	mysql, err := Cfg.GetSection("mysql")
 	if err != nil {
-		panic(err)
+		panic("mysql配置读取出错: "+err.Error())
 	}
 	if data := mysql[model]; data != "" {
 		return mysqlConfig{
@@ -71,7 +74,7 @@ func MySqlConfig() mysqlConfig {
 func RedisConfig() redisConfig {
 	redis, err := Cfg.GetSection("redis")
 	if err != nil {
-		panic(err)
+		panic("redis配置读取出错: "+err.Error())
 	}
 	var (
 		password string
@@ -88,4 +91,13 @@ func RedisConfig() redisConfig {
 		Db:       redis["db"],
 		Password: password,
 	}
+}
+
+// server
+func ServerConf() map[string]string{
+	server, err := Cfg.GetSection("server")
+	if err != nil {
+		panic("读取server配置文件出错: "+err.Error())
+	}
+	return server
 }

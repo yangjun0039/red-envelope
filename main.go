@@ -5,10 +5,9 @@ import (
 	"red-envelope/network"
 	"net/http"
 	"red-envelope/databases/mysql"
-	"red-envelope/application/testRouter"
 	"red-envelope/databases/redis"
-	"red-envelope/application/login"
 	"red-envelope/application/kexin-wallet"
+	"strconv"
 )
 
 func Init(){
@@ -24,10 +23,9 @@ func Init(){
 
 func serverInfoHandler(w http.ResponseWriter, r *http.Request){
 	info := map[string]string{
-		"name": "red-envelope",
-		"version":"1.0",
+		"name": configer.ServerMap["name"],
+		"version":configer.ServerMap["version"],
 	}
-	panic("err")
 	network.NewSuccess(http.StatusOK, info).Response(w)
 }
 
@@ -47,11 +45,17 @@ func main(){
 	//r.Multiplexer = r.Multiplexer.PathPrefix("/v1").Subrouter()
 
 	// 路由挂载
-	testRouter.MountSubrouterOn(r)
-	login.MountSubrouterOn(r)
+	//testRouter.MountSubrouterOn(r)
+	//login.MountSubrouterOn(r)
 	kexin_wallet.MountSubrouterOn(r)
 
-	r.Startup(network.HTTPS, 8080)
+	var port = 443
+	port,err := strconv.Atoi(configer.ServerMap["port"])
+	if err != nil{
+		panic(err)
+	}
+
+	r.Startup(network.HTTPS, uint64(port))
 }
 
 

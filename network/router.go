@@ -83,12 +83,11 @@ func (r *Router) Startup(protocol NetProtocol, port uint64) {
 		}
 		certFile := key["certificate_file"]
 		keyFile := key["private_key_file"]
-		fmt.Println("Startup")
+		SharedManager.Logger.WithField("port", port).Info("Startup", "https server start up")
 		log.Fatal("http server fatal: ", server.ListenAndServeTLS(certFile, keyFile))
 
 	} else if protocol == HTTP {
-		// 添加日志
-		fmt.Println("Startup")
+		SharedManager.Logger.WithField("port", port).Info("Startup", "http server start up")
 		log.Fatal("http server fatal: ", server.ListenAndServe())
 	}
 }
